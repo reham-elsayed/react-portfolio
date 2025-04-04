@@ -3,51 +3,50 @@
 @tailwind utilities;
 
 #root {
-  
   margin: 0 auto;
   text-align: center;
 }
-.h{
-  height:90vh
+.h {
+  height: 90vh;
 }
-.line{
+.line {
   line-height: 150%;
 }
-.icon-decorator::before{
-content:"";
-width:34%;
-position: absolute;
-left: 0;
-top:50%;
-
-background-color: black;
-height:5px;
-z-index: 0;
-}
-.icon-decorator::after{
-  content:"";
-  width:34%;
+.icon-decorator::before {
+  content: "";
+  width: 34%;
   position: absolute;
- right: 0;
-  top:50%;
-  
+  left: 0;
+  top: 50%;
+
   background-color: black;
-  height:5px;
+  height: 5px;
   z-index: 0;
-  }
-.icon-decorator i{
+}
+.icon-decorator::after {
+  content: "";
+  width: 34%;
+  position: absolute;
+  right: 0;
+  top: 50%;
+
+  background-color: black;
+  height: 5px;
+  z-index: 0;
+}
+.icon-decorator i {
   z-index: 999999;
 }
-.layer-card{
+.layer-card {
   transition: all 1s;
   overflow: hidden;
 }
-.layer-card .layer{
+.layer-card .layer {
   transition: all 1s;
-  top:120%;
+  top: 120%;
   opacity: 0;
 }
-.layer-card:hover .layer{
- top:0;
-  opacity:.9;
+.layer-card:hover .layer {
+  top: 0;
+  opacity: 0.9;
 }
